@@ -9,7 +9,7 @@ ADD start.sh /root/start.sh
 
 # required by kvstore client
 
-RUN apt-get update && apt-get -y install libcurl3
+RUN apt-get update && apt-get -y install libcurl3 psmisc
 
 # add default user and add keys
 RUN useradd -ms /bin/bash dinhtta
