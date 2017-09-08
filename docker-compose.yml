@@ -14,7 +14,22 @@ services:
       /root/start.sh
     networks:
       app_net:
-        ipv4_address: 10.0.0.4 
+        ipv4_address: 10.0.0.4
+  authority2:
+    image: bbtest
+    command:
+      /root/start.sh
+    networks:
+      app_net:
+        ipv4_address: 10.0.0.5 
+  authority3:
+    image: bbtest
+    command:
+      /root/start.sh
+    networks:
+      app_net:
+        ipv4_address: 10.0.0.6
+
 
   client0:
     image: bbtest
@@ -29,9 +44,21 @@ services:
       /root/start.sh
     networks:
       app_net:
-        ipv4_address: 10.0.0.86 
-
-
+        ipv4_address: 10.0.0.86
+  client2:
+    image: bbtest
+    command:
+      /root/start.sh
+    networks:
+      app_net:
+        ipv4_address: 10.0.0.87
+  client3:
+    image: bbtest
+    command:
+      /root/start.sh
+    networks:
+      app_net:
+        ipv4_address: 10.0.0.88
 
 networks:
   app_net:

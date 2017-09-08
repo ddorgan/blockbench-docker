@@ -1,9 +1,10 @@
-NS=[2]
+NS=[4]
 #NODES=['10.0.0.{}'.format(x) for x in range(3,36)]
-NODES=['10.0.0.{}'.format(x) for x in range(3,5)]
+NODES=['10.0.0.{}'.format(x) for x in range(3,6)]
 
 #CLIENTS=['10.0.0.{}'.format(x) for x in range(85,100)]
-CLIENTS=['10.0.0.{}'.format(x) for x in range(85,87)]
+CLIENTS=['10.0.0.{}'.format(x) for x in range(85,88)]
+
 PORT='8545'
 #THREADS=[2,4,8,16,32]
 #RATES=[1,2,4,8,12,16]
