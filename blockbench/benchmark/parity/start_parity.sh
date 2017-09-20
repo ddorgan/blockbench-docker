@@ -14,4 +14,4 @@ mkdir -p $LOGS
 # copy keys
 cp keys/key* $KEYS/
 
-nohup ${PARITY} --config config.toml.$IDX --rpcport 8545 --rpcaddr $HOST > $LOGS/log 2>&1 & 
+nohup ${PARITY} --config config.toml.$IDX --rpcport 8545 --gasprice 0 --reseal-min-period 0 --num-verifiers 8 --jsonrpc-threads 8 --fast-unlock --fast-and-loose --rpcaddr $HOST > $LOGS/log 2>&1 & 

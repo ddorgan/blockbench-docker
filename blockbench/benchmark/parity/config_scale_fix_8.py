@@ -1,17 +1,19 @@
-NS=[8,12,16]
-NODES=['10.0.0.{}'.format(x) for x in range(3,36)]
 
-CLIENTS=['10.0.0.{}'.format(x) for x in range(85,100)]
+NS=[8]
+NODES=['10.0.0.{}'.format(x) for x in range(3,7)]
+CLIENTS=['10.0.0.{}'.format(x) for x in range(85,89)]
+
 PORT='8545'
 #THREADS=[2,4,8,16,32]
 #RATES=[1,2,4,8,12,16]
 THREADS=[32]
-RATES=[8]
+RATES=[10]
 
-HOME_DIR='/users/dinhtta/anh/blockchain-perf/benchmark/parity'
+HOME_DIR='/home/dinhtta/blockbench/benchmark/parity'
 CHAIN_DATA='/data/dinhtta/chain-data'
-LOG_DIR='/data/dinhtta/logs/parity'
-PARITY_EXE='/users/dinhtta/.cargo/bin/parity'
+LOG_DIR='/data/logs/'
+PARITY_EXE='/usr/bin/parity'
+
 CLIENT_LOG='logs_scale_fix_8'
 CLIENT_DRIVER='start_ycsb_client.sh'
 
